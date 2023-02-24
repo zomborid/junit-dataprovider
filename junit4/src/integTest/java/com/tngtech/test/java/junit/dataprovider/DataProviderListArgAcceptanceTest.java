@@ -63,6 +63,6 @@ public class DataProviderListArgAcceptanceTest {
     @Test
     @UseDataProvider("listOfListOfUnaryOperator")
     public void testListOfListOfUnaryOperator(UnaryOperator<String> operator) {
-        assertThat(operator.apply("test")).isEqualTo("unexpected-test");
+        assertThat(operator.apply("test")).isEqualTo("merged-test");
     }
 }
