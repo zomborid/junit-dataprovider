@@ -139,7 +139,7 @@ public class DataProvidersTest {
         Object[][] result = testForEach('a', "aa", "aaa");
 
         // Then:
-        assertThat(result).isEqualTo(new Object[][] { { 'a' }, { "b" }, { "c" } });
+        assertThat(result).isEqualTo(new Object[][] { { 'a' }, { "aa" }, { "aaa" } });
     }
 
     @Test
